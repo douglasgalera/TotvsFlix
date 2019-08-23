@@ -1,4 +1,17 @@
-.welcome-card img {
+.welcome-card {
   max-height: 35vh;
   overflow: hidden;
+}
+
+.login-input{
+  border: solid;
+  border-color: purple;
+  width: 75%;
+  border-radius: 50px;
+  top: 25%;
+  left: 15%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  color: white;
+  font-style: italic;
+  background-color: gray
 }
