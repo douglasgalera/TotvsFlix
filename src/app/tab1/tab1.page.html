@@ -11,7 +11,13 @@
 </ion-header>
 <ion-content>
     <!-- Searchbar with danger color -->
-    
+    <!-- fab placed in the center of the content with a list on each side -->
+    <!-- fab placed to the (vertical) center and end -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-fab-button color="danger">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>  
     <ion-searchbar color="danger" placeholder="Busque filmes, séries..."></ion-searchbar>
     <ion-card class="welcome-card">
       <img src="/assets/img/banner1.jpg" alt="100" />
@@ -23,5 +29,35 @@
         <p>A série se passa na década de 1980, e é altamente tematizada pelos elementos culturais da época, com uma trilha sonora remetente aos marcantes sintetizadores...</p>
       </ion-card-content>
     </ion-card>
+    <ion-item>
+        <ion-card-title>Filmes recentes</ion-card-title>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="/assets/img/img-thumb.jpg">
+        </ion-thumbnail>
+        <ion-label>Vingadores: Ultimato</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/img/banner1.jpg">
+          </ion-thumbnail>
+          <ion-label>Stranger Things</ion-label>
+        </ion-item>
+        <ion-item>
+        <ion-card-title>Séries recentes</ion-card-title>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="/assets/img/img-thumb.jpg">
+        </ion-thumbnail>
+        <ion-label>Vingadores: Ultimato</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/img/banner1.jpg">
+          </ion-thumbnail>
+          <ion-label>Stranger Things</ion-label>
+        </ion-item>
     
 </ion-content>
