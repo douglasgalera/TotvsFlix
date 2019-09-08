@@ -4,17 +4,17 @@
       <ion-buttons slot="start">
         <ion-back-button></ion-back-button>
       </ion-buttons>
-      <img src="/assets/img/totvsflix.png" height="30"/>
+      <img src="../assets/img/totvsflix.png" height="30"/>
       
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> 
 <ion-content>
     <!-- Searchbar with danger color -->
     <!-- fab placed in the center of the content with a list on each side -->
     <!-- fab placed to the (vertical) center and end -->
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
-      <ion-fab-button color="danger">
+      <ion-fab-button (click)="AddFilmesSerie()" color="danger">
         <ion-icon name="add"></ion-icon>
       </ion-fab-button>
     </ion-fab>  

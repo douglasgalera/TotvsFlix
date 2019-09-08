@@ -24,4 +24,11 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  AddFilmesSerie() {
+    console.log('teste');
+    window.alert('teste');
+    //this.menu.close('menuId');
+    //this.router.navigate(['/addfilmeserie']);
+  }
 }
