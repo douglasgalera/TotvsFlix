@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-import { IonicModule, MenuController } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 
-import { ListasPage } from './listas.page';
+import { AddfilmeseriePage } from './addfilmeserie.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ListasPage
+    component: AddfilmeseriePage
   }
 ];
 
@@ -21,13 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ListasPage]
+  declarations: [AddfilmeseriePage]
 })
-
-export class ListasPageModule {
-
-
-  ngOnInit() {
-
-  }
-}
+export class AddfilmeseriePageModule {}
