@@ -1,33 +1,54 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      TOTVSFLIX
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <img src="../assets/img/totvsflix.png" height="30"/>
+      
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
+</ion-header> 
 <ion-content>
-  <div class="page-tab2">
-    <h1> teste </h1>
+    <!-- Searchbar with danger color -->
+    <!-- fab placed in the center of the content with a list on each side -->
+    <!-- fab placed to the (vertical) center and end -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-fab-button (click)="AddFilmesSerie()" color="danger">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>  
+    <ion-searchbar color="danger" placeholder="Busque filmes, séries..."></ion-searchbar>
     <ion-card class="welcome-card">
-        <ion-card-header>
-          <ion-card-title>Séries</ion-card-title>
-          <ion-item >
-          <ion-input placeholder="Pesquisar" name="pesquisa" id="loginField" type="text" required [(ngModel)]="pesquisa" > </ion-input>
-          </ion-item>
-        </ion-card-header>
-        <ion-card-subtitle>
-          <p>Assistindo</p>
-        </ion-card-subtitle>
-        <ion-card-subtitle>
-          <p>Novos</p>
-        </ion-card-subtitle>
-        <ion-card-subtitle>
-            <p>Ação</p>
-        </ion-card-subtitle>
-        <ion-card-subtitle>
-            <p>Aventura</p>
-        </ion-card-subtitle>
-      </ion-card>
-    </div>
+      <img src="/assets/img/banner1.jpg" alt="100" />
+      <ion-card-header>
+        <ion-card-subtitle>Continue assistindo</ion-card-subtitle>
+        <ion-card-title>Stranger Things - T3 EP1</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>A série se passa na década de 1980, e é altamente tematizada pelos elementos culturais da época, com uma trilha sonora remetente aos marcantes sintetizadores...</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="welcome-card">
+      <img src="/assets/img/titans.jpg" alt="100" />
+      <ion-card-header>
+        <ion-card-subtitle>Continue assistindo</ion-card-subtitle>
+        <ion-card-title>Jovens Titãs - T3 EP1</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>A série se passa na década de 1980, e é altamente tematizada pelos elementos culturais da época, com uma trilha sonora remetente aos marcantes sintetizadores...</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="welcome-card">
+      <img src="/assets/img/xernobiu.jpg" alt="100" />
+      <ion-card-header>
+        <ion-card-subtitle>Continue assistindo</ion-card-subtitle>
+        <ion-card-title>Chernobil - T1 EP1</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>A série se passa na década de 1980, e é altamente tematizada pelos elementos culturais da época, com uma trilha sonora remetente aos marcantes sintetizadores...</p>
+      </ion-card-content>
+    </ion-card>
+    
+    
 </ion-content>
