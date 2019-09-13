@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      TOTVSFLIX
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <div class="page-tab2">
+    <h1> teste </h1>
+    <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-title>Séries</ion-card-title>
+          <ion-item >
+          <ion-input placeholder="Pesquisar" name="pesquisa" id="loginField" type="text" required [(ngModel)]="pesquisa" > </ion-input>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-subtitle>
+          <p>Assistindo</p>
+        </ion-card-subtitle>
+        <ion-card-subtitle>
+          <p>Novos</p>
+        </ion-card-subtitle>
+        <ion-card-subtitle>
+            <p>Ação</p>
+        </ion-card-subtitle>
+        <ion-card-subtitle>
+            <p>Aventura</p>
+        </ion-card-subtitle>
+      </ion-card>
+    </div>
+</ion-content>

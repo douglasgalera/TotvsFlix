@@ -2,3 +2,25 @@
   max-height: 35vh;
   overflow: hidden;
 }
+page-tab1 {
+   .tab1.Page{
+      background: url("../../assets/img/background.png"); 
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+   }
+   .tab1-container {
+       border-radius: 10px;
+       opacity: 0.8;
+       width: 80%;
+       text-align: center;
+       background-color: white;
+    }
+    .tab1-logo{
+        vertical-align: center;
+        text-align: center;
+    }
+    .tab1-form{
+        opacity: none!important;
+    }
+}
