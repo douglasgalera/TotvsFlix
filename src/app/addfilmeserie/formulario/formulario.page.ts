@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Addfilmeserie } from '../shared/addfilmeserie';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Addfilmeserie } from '../shared/addfilmeserie';
 
 @Component({
   selector: 'app-formulario',
-  templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.scss'],
+  templateUrl: './formulario.page.html',
+  styleUrls: ['./formulario.page.scss'],
 })
-export class FormularioComponent implements OnInit {
+export class FormularioPage implements OnInit {
   formAddfilmeserie: FormGroup;
 
   constructor() { }
@@ -33,4 +33,5 @@ export class FormularioComponent implements OnInit {
     // Usar o método reset para limpar os controles na tela
     this.formAddfilmeserie.reset(new Addfilmeserie());
   }
+
 }

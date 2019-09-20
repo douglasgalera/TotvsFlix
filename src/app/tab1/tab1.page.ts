@@ -16,7 +16,7 @@ export class Tab1Page {
     console.log('teste');
     window.alert('teste');
     //this.menu.close('menuId');
-    this.router.navigate(['/addfilmeserie']);
+    this.router.navigate(['/formulario']);
   }
 
 }
