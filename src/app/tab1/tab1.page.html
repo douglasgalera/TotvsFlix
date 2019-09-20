@@ -1,19 +1,63 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Login
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <img src="../assets/img/totvsflix.png" height="30"/>
+      
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
+</ion-header> 
 <ion-content>
-  <ion-card class="welcome-card">
-    <ion-card-content>
-      login
-      <ion-input type="e-mail" placeholder="Digite seu e-mail" class="login-input"></ion-input>
-      Senha
-      <ion-input type="password" placeholder="Digite seu e-mail" class="login-input"></ion-input>
-    </ion-card-content>
-  </ion-card>
-
+    <!-- Searchbar with danger color -->
+    <!-- fab placed in the center of the content with a list on each side -->
+    <!-- fab placed to the (vertical) center and end -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-fab-button (click)="AddFilmesSerie()" color="danger">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>  
+    <ion-searchbar color="danger" placeholder="Busque filmes, séries..."></ion-searchbar>
+    <ion-card class="welcome-card">
+      <img src="/assets/img/banner1.jpg" alt="100" />
+      <ion-card-header>
+        <ion-card-subtitle>Continue assistindo</ion-card-subtitle>
+        <ion-card-title>Stranger Things - T3 EP1</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>A série se passa na década de 1980, e é altamente tematizada pelos elementos culturais da época, com uma trilha sonora remetente aos marcantes sintetizadores...</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-item>
+        <ion-card-title>Filmes recentes</ion-card-title>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="/assets/img/img-thumb.jpg">
+        </ion-thumbnail>
+        <ion-label>Vingadores: Ultimato</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/img/banner1.jpg">
+          </ion-thumbnail>
+          <ion-label>Stranger Things</ion-label>
+        </ion-item>
+        <ion-item>
+        <ion-card-title>Séries recentes</ion-card-title>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="/assets/img/img-thumb.jpg">
+        </ion-thumbnail>
+        <ion-label>Vingadores: Ultimato</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/img/banner1.jpg">
+          </ion-thumbnail>
+          <ion-label>Stranger Things</ion-label>
+        </ion-item>
+    
 </ion-content>
