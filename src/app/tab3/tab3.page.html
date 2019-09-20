@@ -1,9 +1,65 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <img src="../assets/img/totvsflix.png" height="30"/>
+      
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content></ion-content>
+</ion-header> 
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Configurações</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Toggles in a List -->
+        <ion-list>
+          <ion-item>
+            <ion-label>Mostrar mais assistidos</ion-label>
+            <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+          </ion-item>
+          <ion-item>
+            <ion-label>Mostrar recentes</ion-label>
+            <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Notificações</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Toggles in a List -->
+        <ion-list>
+          <ion-item>
+            <ion-label>Enviar notificações na tela</ion-label>
+            <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+          </ion-item>
+          <ion-item>
+            <ion-label>Enviar notificações na tela</ion-label>
+            <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Usuário e senha</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- USUARIO -->
+        <ion-label>Login</ion-label>
+        <ion-input value="meusuario@meusite.com"></ion-input>
+        <ion-label>Senha Atual</ion-label>
+        <ion-input type="password" value="Senha nova"></ion-input>
+        <ion-label>Senha Nova</ion-label>
+        <ion-input type="password" value="Senha nova"></ion-input>
+        <ion-label>Confirmação de Senha</ion-label>
+        <ion-input type="password" value="Senha nova"></ion-input>
+      </ion-card-content>
+    </ion-card>
+  </ion-content> 
