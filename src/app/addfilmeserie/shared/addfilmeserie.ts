@@ -5,6 +5,4 @@ export class Addfilmeserie {
   static dataLancamento: Date = null;
   static sinope: string = '';
   static inativo: boolean = false;
-  static datalancamento: any;
-  static observacao: any;
 }

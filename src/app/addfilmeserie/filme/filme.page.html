@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <img src="../assets/img/totvsflix.png" height="30"/>
+        
+      </ion-title>
+    </ion-toolbar>
+</ion-header> 
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>filme</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form>
+      <ion-list>
+          <ion-item>
+            <ion-input type="text" placeholder="Nome"></ion-input>
+          </ion-item>
+          <ion-item>
+              <span class="input-label">Data do Lançamento:</span>
+             <ion-input type="Date" name="Data de Lançamento" placeholder="Data de Lançamento"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Gênero</ion-label>
+              <ion-select multiple="true">
+                <ion-select-option value="Acao">Ação</ion-select-option>
+                <ion-select-option value="Comedia">Comédia</ion-select-option>
+                <ion-select-option value="Desenho">Desenho</ion-select-option>
+                <ion-select-option value="Drama">Drama</ion-select-option>
+                <ion-select-option value="Ficcao">Ficção</ion-select-option>
+                <ion-select-option value="Infantil">Infantil</ion-select-option>
+                <ion-select-option value="Terror">Terror</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="Sinope"></ion-input>
+             </ion-item>
+             <ion-item>
+                <ion-input type="text" placeholder="Tempo de Duração"></ion-input>
+             </ion-item>
+
+      </ion-list>
+    </form>
+</ion-content>

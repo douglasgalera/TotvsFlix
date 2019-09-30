@@ -1,50 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <img src="../assets/img/totvsflix.png" height="30"/>
+        
+      </ion-title>
+    </ion-toolbar>
+  </ion-header> 
+  <ion-header>
+
+      <ion-toolbar>
+        <ion-title>Cadastro de Titulos</ion-title>
+      </ion-toolbar>
+    
+    </ion-header>
 <ion-content>
-  <form>
-
-    <div class="form-group">
-      <label for="nome">Nome</label>
-      <input type="text" class="form-control" name="nome" id="nome" formControlName="nome">
-    </div>
-
-    <div class="form-group">
-      <label for="tipo">Tipo</label>
-      <select class="form-control" name="tipo" id="tipo" formControlName="tipo">
-        <option value="1">Pessoa física</option>
-        <option value="2">Pessoa jurídica</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>Gênero</label>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="genero" id="masculino" [value]="1" formControlName="genero">
-        <label class="form-check-label" for="masculino">Masculino</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="genero" id="feminino" [value]="2" formControlName="genero">
-        <label class="form-check-label" for="feminino">Feminino</label>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="dataLancamento">Data de lançamento</label>
-      <input type="date" class="form-control" name="dataLancamento" id="dataLancamento"
-        formControlName="dataLancamento">
-    </div>
-
-    <div class="form-group">
-      <label for="sinope">Sinope</label>
-      <textarea class="form-control" rows="3" name="sinope" id="sinope" formControlName="sinope"></textarea>
-    </div>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" name="inativo" id="inativo" formControlName="inativo">
-      <label class="form-check-label" for="inativo">Inativo</label>
-    </div>
-
-    <input type="submit" class="btn btn-primary mt-4" value="Salvar">
-    <a href="#" class="btn btn-secondary mt-4 ml-2">Cancelar</a>
-
-  </form>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-fab-button (click)="AddFilmesSerie()" color="danger">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> 
+    <form action="receptordoform" method="GET">
+        <ion-item>
+            <ion-label>Tipo do Titulo</ion-label>
+            <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet"  placeholder="Selecione o tipo">
+              <ion-select-option value="f" (click)="AddFilmesSerie()">
+                  <ion-button>
+                      <ion-icon  name="star"></ion-icon>
+                      Filme
+                      <ion-icon name="Formulario"></ion-icon>
+                    </ion-button>
+                  </ion-select-option>
+              <ion-select-option value="s" (click)="AddFilmesSerie()">Series</ion-select-option>
+            </ion-select>
+        </ion-item> 
+    </form>
 </ion-content>

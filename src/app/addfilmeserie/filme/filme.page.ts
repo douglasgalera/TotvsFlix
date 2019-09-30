@@ -4,11 +4,11 @@ import { Addfilmeserie } from '../shared/addfilmeserie';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-formulario',
-  templateUrl: './formulario.page.html',
-  styleUrls: ['./formulario.page.scss'],
+  selector: 'app-filme',
+  templateUrl: './filme.page.html',
+  styleUrls: ['./filme.page.scss'],
 })
-export class FormularioPage implements OnInit {
+export class FilmePage implements OnInit {
   formAddfilmeserie: FormGroup;
 
   constructor(
@@ -18,7 +18,6 @@ export class FormularioPage implements OnInit {
   ngOnInit() {
     this.createForm(new Addfilmeserie());
   }
-
   createForm(addfilme: Addfilmeserie) {
     this.formAddfilmeserie = new FormGroup({
       nome: new FormControl(Addfilmeserie.nome),
@@ -36,12 +35,5 @@ export class FormularioPage implements OnInit {
     // Usar o método reset para limpar os controles na tela
     this.formAddfilmeserie.reset(new Addfilmeserie());
   }
-  AddFilmesSerie() {
-    console.log('teste');
-    window.alert('teste');
-    //this.menu.close('menuId');
-    this.router.navigate(['/filme']);
-  }
-
 
 }
