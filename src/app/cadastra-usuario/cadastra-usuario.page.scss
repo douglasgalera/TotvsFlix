@@ -1,0 +1,35 @@
+.backgroud {
+    background-image: url('Imagem\fundo.jpg');
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10%;
+    width: 100%
+   }
+ 
+ 
+   .cardlogin {
+     background-color: transparent;
+     color: white;
+    
+    }
+ 
+    .login-input {
+        background-color: gray;
+        opacity: 0.5;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom:5%;
+        
+    }
+ 
+    .login-label {
+     text-align: center;
+     margin-bottom:5%;
+     
+ }
+
+ .titulo-login{
+    width: 75%;
+     margin:auto;
+  }
